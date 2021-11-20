@@ -1,1 +1,1 @@
-# price-cards
+# Price Cards

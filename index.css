@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #5D5D5D;
+}
+
+#title {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 60pt;
+    color: #FFF
+}
+
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #FFF;
+    padding: 4rem;
+}
