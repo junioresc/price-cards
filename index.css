@@ -12,7 +12,7 @@ body {
 #title {
     text-align: center;
     padding-top: 3rem;
-    font-size: 60pt;
+    font-size: 4rem;
     color: #FFF
 }
 
@@ -32,11 +32,61 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+/* Beginning of ribbon */
+
+.medium::before {
+    position: absolute;
+    content: '';
+    background-color: #4361EE;
+    height: 1.75rem;
+    width: 1.75rem;
+    top: 1.75rem;
+    right: -0.5rem;
+    transform: rotate(45deg);
+}
+
+.medium::after {
+    position: absolute;
+    content: 'Most Popular';
+    top: 0.688rem;
+    right: -0.875rem;
+    padding: 0.5rem;
+    width: 10rem;
+    background: #4361EE;
+    color: #FFF;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 0.938rem rgba(26, 35, 126, 0.2);
+}
+
+#ribbon {
+    background: #FFF;
+}
+
+/* End of ribbon */
+
+/* The top of the border for each card */
+.low {
+    border-top: 1rem solid #3A0CA3;
+}
+
+.medium {
+    border-top: 1rem solid #4361EE;
+}
+
+.high {
+    border-top: 1rem solid #90DDF0;
+}
+
+/* End of card border */
+
+/* Text inside card */
 
 h2 {
     padding-bottom: 1rem;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 p {
@@ -55,4 +105,40 @@ span {
 
 svg + p {
     margin-left: 0.5rem;
+}
+
+/* End of text inside card */
+
+/* Button inside card. One, two, three refer to the button with the low, medium and high tier respectively */
+
+.sign_up {
+    text-transform: uppercase;
+    height: 4rem;
+    width: 13rem;
+    font-size: 1.25rem;
+    box-shadow: 0.25rem 0.25rem 0.938rem rgba(26, 35, 126, 0.2);
+}
+
+.sign_up:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.one {
+    background-color: #3A0CA3;
+    border-radius: 0.75rem;
+    border: none;
+}
+
+.two {
+    background-color: #4361EE;
+    border-radius: 0.75rem;
+    border: none;
+}
+
+.three {
+    background-color: #90DDF0;
+    border-radius: 0.75rem;
+    border: none;
 }
