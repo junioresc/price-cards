@@ -17,4 +17,5 @@ iPhone
 
 Website Link
 ------------------
-junioresc.github.io/price-cards
+[Price Cards](https://junioresc.github.io/price-cards)
+
