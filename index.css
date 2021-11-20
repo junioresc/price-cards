@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +20,8 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
 }
 
 .card {
@@ -33,6 +35,12 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.wrapper {
+    padding : 3.4rem;
+    height: 32rem;
+    width: 23rem;
 }
 
 /* Beginning of ribbon */
@@ -63,11 +71,17 @@ main {
 
 #ribbon {
     background: #FFF;
+    padding : 3.4rem;
+    height: 32rem;
+    width: 23rem;
+    border-radius: 1rem;
+    position: relative;
 }
 
 /* End of ribbon */
 
 /* The top of the border for each card */
+
 .low {
     border-top: 1rem solid #3A0CA3;
 }
@@ -87,6 +101,7 @@ main {
 h2 {
     padding-bottom: 1rem;
     font-size: 2.5rem;
+    font-weight: 300;
 }
 
 p {
@@ -116,6 +131,7 @@ svg + p {
     height: 4rem;
     width: 13rem;
     font-size: 1.25rem;
+    color: #FFF;
     box-shadow: 0.25rem 0.25rem 0.938rem rgba(26, 35, 126, 0.2);
 }
 
